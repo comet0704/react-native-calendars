@@ -81,6 +81,10 @@ class Day extends Component {
       dotStyle.push(this.style.todayDot);
     }
 
+    if (marking.selectable) {
+      textStyle.push(this.style.selectableText);
+    }
+
     return (
       <TouchableOpacity
         testID={this.props.testID}

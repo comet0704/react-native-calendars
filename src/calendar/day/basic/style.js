@@ -25,7 +25,7 @@ export default function styleConstructor(theme={}) {
     },
     selected: {
       backgroundColor: appStyle.selectedDayBackgroundColor,
-      borderRadius: 16
+      borderRadius: 4
     },
     today: {
       backgroundColor: appStyle.todayBackgroundColor,
@@ -36,6 +36,9 @@ export default function styleConstructor(theme={}) {
     },
     selectedText: {
       color: appStyle.selectedDayTextColor
+    },
+    selectableText: {
+      color: theme.selectableDayTextColor
     },
     disabledText: {
       color: appStyle.textDisabledColor
